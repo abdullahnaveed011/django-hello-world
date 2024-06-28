@@ -1,9 +1,8 @@
 {
-    "functions": {
-      "api/*.py": {
-        "includeFiles": "api/**",
-        "excludeFiles": "large_dependency/**"
-      }
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/wsgi.py"
     }
-  }
-  
+  ]
+}
